@@ -14,6 +14,7 @@
 		9C876969245213F4006A0A67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C876968245213F4006A0A67 /* Assets.xcassets */; };
 		9C87696C245213F4006A0A67 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C87696A245213F4006A0A67 /* LaunchScreen.storyboard */; };
 		9C8769752452173E006A0A67 /* Refresh.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9C8769732452173E006A0A67 /* Refresh.xcdatamodeld */; };
+		9C8769792452180D006A0A67 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8769782452180D006A0A67 /* CoreDataStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		9C87696B245213F4006A0A67 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C87696D245213F4006A0A67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C8769742452173E006A0A67 /* Refresh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Refresh.xcdatamodel; sourceTree = "<group>"; };
+		9C8769782452180D006A0A67 /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		9C87695E245213F1006A0A67 /* Refresh Project */ = {
 			isa = PBXGroup;
 			children = (
+				9C876977245217FC006A0A67 /* Core Data */,
 				9C87695F245213F1006A0A67 /* AppDelegate.swift */,
 				9C876961245213F1006A0A67 /* SceneDelegate.swift */,
 				9C876963245213F1006A0A67 /* ViewController.swift */,
@@ -68,6 +71,14 @@
 				9C87696D245213F4006A0A67 /* Info.plist */,
 			);
 			path = "Refresh Project";
+			sourceTree = "<group>";
+		};
+		9C876977245217FC006A0A67 /* Core Data */ = {
+			isa = PBXGroup;
+			children = (
+				9C8769782452180D006A0A67 /* CoreDataStack.swift */,
+			);
+			name = "Core Data";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +152,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8769792452180D006A0A67 /* CoreDataStack.swift in Sources */,
 				9C876964245213F1006A0A67 /* ViewController.swift in Sources */,
 				9C876960245213F1006A0A67 /* AppDelegate.swift in Sources */,
 				9C876962245213F1006A0A67 /* SceneDelegate.swift in Sources */,
