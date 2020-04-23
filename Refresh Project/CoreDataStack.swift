@@ -35,6 +35,7 @@ class CoreDataStack {
         // This will automatically update things whenever we change CoreData.
         // Don't do it for an app that may contain a ton of entries.
         container.viewContext.automaticallyMergesChangesFromParent = true
+        // MARK: - What's the difference between a computed property that goes : Property {} from one that goes : Property = {}
         
         return container
     }() // We'll be returning a customized instance. I believe the parentheses at the end actually initialize this instance.
@@ -45,5 +46,23 @@ class CoreDataStack {
         container.viewContext
     }
     
+    // In the words of Stourstroup: "Let the called function catch the error. Let the Function Caller handle the error." or something like that lol idk
+    // This function lets us reduce the overhead when saving a context.
+    func save(context: NSManagedObjectContext = CoreDataStack.shared.mainContext) throws {
+        // We have to craft our own error object
+        var saveError: Error?
+        
+        // Perform and wait forces the called block to be performed synchronously within the context's queue.
+        // MARK: - Right?
+        context.performAndWait {
+            
+            do {
+                try context.save()
+            } catch {
+                saveError = error
+            }
+        }
+        if let error = saveError { throw error }
+    }
     
 }

@@ -44,7 +44,6 @@
 		9C876953245213F1006A0A67 = {
 			isa = PBXGroup;
 			children = (
-				9C8769732452173E006A0A67 /* Refresh.xcdatamodeld */,
 				9C87695E245213F1006A0A67 /* Refresh Project */,
 				9C87695D245213F1006A0A67 /* Products */,
 			);
@@ -77,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				9C8769782452180D006A0A67 /* CoreDataStack.swift */,
+				9C8769732452173E006A0A67 /* Refresh.xcdatamodeld */,
 			);
 			name = "Core Data";
 			sourceTree = "<group>";
