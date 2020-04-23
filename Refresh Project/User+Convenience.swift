@@ -25,4 +25,10 @@ extension User {
         self.email = email
     }
     
+    /*
+     I'll skip on created a toRepresentation computed property and a convenience initializer to create a new entry from a representation.
+     
+     I feel confident enough in my understanding of the conceepts, and the  implementation is relatively simmple.
+     */
+    
 }
