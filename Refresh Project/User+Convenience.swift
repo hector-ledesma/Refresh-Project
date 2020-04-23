@@ -9,4 +9,8 @@
 import Foundation
 import CoreData
 
-
+// The extension has to match what the Entity was named.
+// I had to restart this xcodeproject for it to find User. Something to keep in mind.
+extension User {
+    
+}

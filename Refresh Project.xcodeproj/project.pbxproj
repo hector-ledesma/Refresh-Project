@@ -366,6 +366,7 @@
 			currentVersion = 9C8769742452173E006A0A67 /* Refresh.xcdatamodel */;
 			path = Refresh.xcdatamodeld;
 			sourceTree = "<group>";
+			usesTabs = 0;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */
