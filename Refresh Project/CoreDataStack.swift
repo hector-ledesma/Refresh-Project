@@ -39,4 +39,11 @@ class CoreDataStack {
         return container
     }() // We'll be returning a customized instance. I believe the parentheses at the end actually initialize this instance.
     
+    // A context tracks changes to instances of your app as it's seen by that context. So there can be more than one context, all with their own copy of your model. They sync once you save to persistent store.
+    // We waint quick access to the main context, from the container we'll be working with.
+    var mainContext: NSManagedObjectContext {
+        container.viewContext
+    }
+    
+    
 }
